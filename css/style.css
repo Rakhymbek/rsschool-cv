@@ -43,7 +43,8 @@ body {
 h1,
 h2,
 h3,
-ul {
+ul,
+pre {
     margin: 0;
 }
 
@@ -61,6 +62,10 @@ ul {
 
 a {
     text-decoration:  none;
+    color: var(--text-color);
+}
+a:hover {
+    color: var(--title-color);
 }
 
 img {
@@ -82,8 +87,9 @@ section {
 }
 
 .container {
-    max-width: 1100px;
-    margin: 0 auto; 
+    max-width: 1000px;
+    box-shadow: 0 0px 4px 0px #00000096;
+    margin: 2rem auto;
 }
 
 .header {
@@ -156,4 +162,28 @@ section {
     left: -20px;
     color: var(--text-color);
     line-height: 21px;
+}
+
+.courses_list {
+    margin: 1rem 0px 0px;
+}
+
+.courses_item {
+    position: relative;
+    margin-bottom: 1rem;
+}
+.courses_list .courses_item::before {
+    content: "▹";
+    position: absolute;
+    left: -20px;
+    color: var(--text-color);
+    line-height: 21px;
+}
+
+.code_example {
+    overflow: auto;
+    font-size: 100%;
+    line-height: 1.45;
+    background-color: #eaedf0c9;
+    font-family: monospace;
 }
