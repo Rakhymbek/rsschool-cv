@@ -4,7 +4,7 @@
 /* CSS variables */
 :root {
     --header-height: 3rem;
-    --title-color: #713d8e;;
+    --title-color: #79389c;;
     --text-color: #403A3A;
     --text-color-light: #707070;
     --container-color: #FAFAFA;
@@ -63,6 +63,7 @@ ul {
 a {
     text-decoration:  none;
     color: var(--text-color);
+    transition: all 0.2s ease-in;
 }
 a:hover {
     color: var(--title-color);
@@ -77,13 +78,11 @@ section {
     padding: 1rem 2rem;
 }
 
-.section-title {
+.section_title {
     font-size: var(--h2-font-size);
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
-    text-transform: uppercase;
-    letter-spacing: 0.35rem;
-    text-align: center;
+    border-bottom: 1px solid var(--title-color);
 }
 
 .container {
@@ -177,6 +176,15 @@ section {
     left: -20px;
     color: var(--text-color);
     line-height: 21px;
+}
+.courses_link {
+    transition: all 0.2s ease-in;
+}
+
+.courses_link:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--text-color);
+    text-decoration-skip-ink: none;
 }
 
 .code_example {
