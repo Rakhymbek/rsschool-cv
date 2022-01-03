@@ -1,3 +1,159 @@
-.main_title {
-    color: rgb(20, 158, 38);
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* CSS variables */
+:root {
+    --header-height: 3rem;
+    --title-color: #713d8e;;
+    --text-color: #403A3A;
+    --text-color-light: #707070;
+    --container-color: #FAFAFA;
+    --container-color-alt: #F0EFEF;
+    --body-color: #FCFCFC;
+
+    --body-font: 'Poppins', sans-serif;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+}
+
+/* Basic css styles */
+*,::before,::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 0 var(--header-height) 0;
+    padding: 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+ul {
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration:  none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 1rem 2rem;
+}
+
+.section-title {
+    font-size: var(--h2-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.35rem;
+    text-align: center;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto; 
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nav_list {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nav_link {
+    padding: 10px;
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.profile_container {
+    display: flex;
+}
+
+.header_content {
+    align-self: center;
+    margin: 0px auto;
+}
+
+.header_title {
+    color:var(--text-color);
+    font-size: var(--header-height);
+    font-weight: var(--font-semi-bold);
+}
+
+.contacts_list {
+    margin-top: 25px;
+}
+
+.contacts_item {
+    margin-bottom: 5px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 315px 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.skills_list {
+    display: grid;
+    
+    grid-template-columns: repeat(2, minmax(126px, 200px));
+    gap: 0px 10px;
+    margin: 1rem 0px 0px;
+}
+
+
+.skills_item {
+    position: relative;
+    margin-bottom: 1rem;
+}
+.skills_list .skills_item::before {
+    content: "▹";
+    position: absolute;
+    left: -20px;
+    color: var(--text-color);
+    line-height: 21px;
 }

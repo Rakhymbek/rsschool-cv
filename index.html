@@ -5,9 +5,115 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML, CSS & Git Basics</title>
+    <!-- Box icons -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- CSS style link -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-        <h1 class="main_title">HTML, CSS & Git Basics</h1>
+    <div class="container">
+        <header class="header" id="header">
+            <nav class="nav nav_container">
+                <!-- <a href="#" class="nav_logo">R.Sagyn</a> -->
+
+                <div class="nav_menu" id="nav_menu">
+                    <ul class="nav_list">
+                        <li class="nav_item">
+                            <a href="#about" class="nav_link">
+                                <i class='bx bx-user'></i>About Me
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#contacts" class="nav_link">
+                                <i class='bx bx-phone'></i>Contacts
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#education" class="nav_link">
+                                <i class='bx bx-book'></i>Education
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#skills" class="nav_link">
+                                <i class='bx bx-receipt'></i>Skills
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#code" class="nav_link">
+                                <i class='bx bx-code-block' ></i>Code Example
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#courses" class="nav_link">
+                                <i class='bx bx-award'></i>Courses
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#languages" class="nav_link">
+                                <i class='bx bx-globe'></i>Languages
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.nav_list -->
+                </div>
+                <!-- /.nav_menu -->
+            </nav>
+            <div class="profile_container">
+                <div class="header_photo">
+                    <img src="/img/photo.png" alt="profile-photo">
+                </div>
+                <div class="header_content">
+                    <h2 class="header_title">Rakhymbek Sagyn</h2>
+                    <h2>Frontend-developer</h2>
+                    <ul class="contacts_list" id="contacts">
+                        <li class="contacts_item">
+                            <strong>Location:</strong> Aktau city, Kazakhstan
+                        </li>
+                        <li class="contacts_item">
+                            <strong>Phone:</strong> <a href="tel:87479620815">+7 747 962 08 15</a>
+                        </li>
+                        <li class="contacts_item">
+                            <strong>Email:</strong> <a href="sagrakha@gmail.com">sagrakha@gmail.com</a>
+                        </li>
+                        <li class="contacts_item">
+                            <strong>Github:</strong> <a href="https://github.com/Rakhymbek">Rakhymbek</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- /.header -->
+        <main class="main">
+            <section id="skills">
+                <h2 class="section_title">Skills</h2>
+                <ul class="skills_list">
+                    <li class="skills_item">JavaScript (ES6+)</li>
+                    <li class="skills_item">JQuery</li>
+                    <li class="skills_item">HTML&amp;CSS</li>
+                    <li class="skills_item">Figma</li>
+                    <li class="skills_item">Git, Github</li>
+                    <li class="skills_item">Adobe Illustrator</li>
+                </ul>
+            </section>
+            <section id="about">
+                <h2 class="section_title">About Me</h2>
+                <p>My interest in web development started in the beginning of summer of 2021 when I decided to take a participation in intensive lessons by Glo Academy and they taught me a lot about HTML & CSS!</p>
+                <p>Today I study on different platforms (Udemy, Coursera, Youtube) to improve my skills. My main focus these days is learn how to build applications that are user-interactive and efficient.</p>
+            </section>
+            <section id="courses">
+                <h2 class="section_title">Courses</h2>
+            </section>
+            <section id="code">
+                <h2 class="section_title">Code Example</h2>
+            </section>
+            <section id="languages">
+                <h2 class="section_title">Languages</h2>
+            </section>
+        </main>
+        <!-- /.main -->
+    </div>
+    <!-- /.container -->
+        
 </body>
 </html>
